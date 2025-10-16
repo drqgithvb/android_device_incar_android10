@@ -16,7 +16,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/incar/android10/device.mk)
 
 PRODUCT_DEVICE := android10
-PRODUCT_NAME := twrp_android10
+PRODUCT_NAME := omni_android10
 PRODUCT_BRAND := colorfly
 PRODUCT_MODEL := S108-JD
 PRODUCT_MANUFACTURER := incar

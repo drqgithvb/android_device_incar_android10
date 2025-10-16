@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_android10.mk
+    $(LOCAL_DIR)/omni_android10.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_android10-user \
-    twrp_android10-userdebug \
-    twrp_android10-eng
+    omni_android10-user \
+    omni_android10-userdebug \
+    omni_android10-eng
