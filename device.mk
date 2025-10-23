@@ -6,3 +6,7 @@
 #
 
 LOCAL_PATH := device/incar/android10
+
+PRODUCT_ENFORCE_VINTF_MANIFEST := true 
+
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
