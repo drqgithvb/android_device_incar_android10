@@ -82,6 +82,9 @@ TARGET_BOARD_PLATFORM := ums512
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 BOARD_INCLUDE_RECOVERY_DTBO := true
@@ -108,10 +111,17 @@ PLATFORM_VERSION := 16.1.0
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
+TW_SCREEN_BLANK_ON_BOOT := false
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_FASTBOOTD := true
+TW_USE_TOOLBOX := true
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/backlight/backlight/sprd_backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 64
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_NO_HAPTICS := true
+TW_NO_SCREEN_TIMEOUT := true
 
 # Debug
 TARGET_USES_LOGD := true
